@@ -1,0 +1,22 @@
+.footer__contenido{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.index__titulo{
+    color: #b99776;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.index__item{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.redes__lista{
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8rem;
+}

@@ -5,27 +5,18 @@
     /*Paleta*/
     --primary-solid: #ffffff;
     --secondary-solid: #070707;
-    --accent-solid: #68390e;
+    --accent-solid: #633f1e;
 
-    --bg-light: #ac8867;
+    --bg-light: #b99776;
     --bg-dark: #2c2c2c;
 
     --font-light: #fdf0d5;
-    --font-dark: #68390e;
-    --font-accent: #ac8867;
+    --font-dark: #633f1e;
+    --font-accent: #b99776;
 
     /*Fonts*/
     --base-font: 'Poppins', sans-serif;
 
-    /*Font-sizes*/
-    --font-xxs: 1.2rem;
-    --font-xs: 1.4rem;
-    --font-s: 1.6rem;
-    --font-m: 1.8rem;
-    --font-l: 2rem;
-    --font-xl: 2.4rem;
-    --font-xxl: 3rem;
-    --font-xxxl: 3.8rem;
 }
 
 *,

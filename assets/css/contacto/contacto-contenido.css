@@ -1,0 +1,10 @@
+.contacto__contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.contacto__texto{
+    margin-top: 2rem;
+}

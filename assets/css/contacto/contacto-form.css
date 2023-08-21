@@ -1,0 +1,33 @@
+.contacto__form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form__label{
+    margin-top: 2rem;
+}
+
+input, textarea{
+    font-size: 1.8rem;
+    padding: .5rem;
+    border: none;
+    background-color: #b99776;
+}
+
+.form__btn{
+    background-color: #fdf0d5;
+    color: #633f1e;
+    border: solid 2px #633f1e;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 4rem auto;
+    width: 50%;
+}
+
+.form__btn:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+

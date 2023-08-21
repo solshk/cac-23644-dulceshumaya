@@ -1,0 +1,19 @@
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.menu__lista{
+    display: flex;
+}
+
+.menu__item{
+    padding: 2rem;
+    font-size: 1.8rem;
+}
+
+.menu__item:hover{
+    text-decoration:underline;
+}

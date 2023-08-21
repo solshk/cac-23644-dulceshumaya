@@ -1,0 +1,15 @@
+.diferencial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diferencial__icono {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.diferencial__texto {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
