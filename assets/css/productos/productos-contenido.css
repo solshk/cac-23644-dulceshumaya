@@ -5,6 +5,11 @@
     padding: 3rem;
 }
 
+.producto__img{
+    max-width: 50%;
+    height: auto;
+}
+
 .producto__titulo{
     font-size: 3rem;
     font-weight: 300;
@@ -31,4 +36,8 @@
     font-size: 1.4rem;
     font-weight: 700;
     margin-top: 4rem;
+}
+
+.producto__intercalado{
+    order: -1;
 }
