@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    max-width: 25%;
     background-color: #b99776;
 }
 
@@ -11,11 +11,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+
+.receta__img__contenedor {
+    width: 100%;
+    min-height: 60%;
+    max-height: 60%;
 }
 
 .receta__img{
-    height: 60%;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .receta__titulo{
