@@ -14,3 +14,5 @@ cruz.addEventListener("click", () => {
     cruz.classList.toggle("active");
     menuLista.classList.toggle("active");
 }); 
+
+// SECTION: BANNER 

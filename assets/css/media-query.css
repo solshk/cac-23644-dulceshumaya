@@ -1,3 +1,4 @@
+/* HEADER */
 @media screen and (max-width: 768px) {
     .menu__hamburguesa{
         display: block;
@@ -30,5 +31,19 @@
     .menu__lista.active{
         right: 0;
         z-index: 99;
+    }
+}
+
+/* SECTION: BANNER */
+@media screen and (max-width: 768px) {
+    .banner__contenido{
+        width: 100%;
+        align-items: center;
+    }
+    .banner__titulo {
+        text-align: center;
+    }
+    .banner__texto {
+        text-align: start;
     }
 }
