@@ -33,6 +33,7 @@
 
     /* SECTION: BANNER */
     .banner__contenido{
+        padding: 3rem;
         width: 100%;
         align-items: center;
     }
@@ -70,11 +71,42 @@
     }
     
     .diferencial__texto {
-        font-size: 3rem;
+        font-size: 1.8rem;
+    }
+
+    /* SECTION: RECETAS */
+    .recetas__contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+    .receta{
+        min-width: 90%;
+        margin-bottom: 3rem;
+    }
+     
+    /* SECTION: CONTACTO */
+    .contacto{
+        padding: 1.5rem;
+    }
+    .contacto__form {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 1.5rem;
+    }
+    .footer__contenido {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .footer__logo,
+    .ubicacion{
+        display: none;
+    }
+    .redes__lista{
+        flex-direction: row;
+        gap: 2rem;
     }
 }
-
-
-
-
-
