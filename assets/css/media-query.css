@@ -1,18 +1,16 @@
-/* HEADER */
 @media screen and (max-width: 768px) {
+
+    /* HEADER */
     .menu__hamburguesa{
         display: block;
         cursor: pointer;
     }
-
     .menu__hamburguesa.active{
         display: none
     }
-
     .hamburguesa__cruz.active {
         display: block;
     }
-
     .menu__lista{
         flex-direction: column;
         align-items: flex-end;
@@ -22,20 +20,18 @@
         top: 120px;
         width: 100%;
         transition: 0.3s;
+        display: none;
     }
-
     .menu__item{
         margin-right: 2rem;
     }
-
     .menu__lista.active{
         right: 0;
         z-index: 99;
+        display: flex;
     }
-}
 
-/* SECTION: BANNER */
-@media screen and (max-width: 768px) {
+    /* SECTION: BANNER */
     .banner__contenido{
         width: 100%;
         align-items: center;
@@ -46,4 +42,21 @@
     .banner__texto {
         text-align: start;
     }
+
+    /* SECTION: PRODUCTOS */
+    .producto{
+        flex-direction: column;
+    }
+    .producto__img__contenedor {
+        min-width: 100%;
+    }
+    .producto__contenido {
+        align-items: center;
+    }
+    .producto__intercalado {
+        order: 0;
+    }
 }
+
+
+
