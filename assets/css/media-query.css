@@ -32,6 +32,9 @@
     }
 
     /* SECTION: BANNER */
+    .banner::before {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
     .banner__contenido{
         padding: 3rem;
         width: 100%;
