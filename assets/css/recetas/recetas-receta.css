@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 25%;
+    min-width: 25%;
     background-color: #b99776;
+    margin: .5rem;
 }
 
 .receta__contenido{
@@ -11,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     justify-content: space-around;
 }
 
