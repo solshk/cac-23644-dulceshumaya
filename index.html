@@ -128,52 +128,22 @@
         </div>
     </section>
 
-    <!-- <section class="recetas">
-        <h2 class="recetas__titulo">RECETAS</h2>
-        <div class="recetas__contenido">
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/conitos.jpg" alt="Conitos de Dulce de Leche">
-                </div>
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">CONITOS</h3>
-                    <p class="receta__texto">Una deliciosa opción para acompañar las meriendas, ese antojo de media noche o compartir con amigos.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/pepas.jpg" alt="Pepas de Dulce de Leche">
-                </div>                
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">PEPAS</h3>
-                    <p class="receta__texto">Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la hora del té.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/torta.jpg" alt="Torta con dulcenutt">
-                </div>                
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">TORTA NUTT</h3>
-                    <p class="receta__texto">La torta de tres capas más sabrosa del mundo, combina una base de vainilla, dulce de leche y cubierta de choconutt.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <section class="recetas">
         <h2 class="recetas__titulo">RECETAS</h2>
-        <div class="contenedor-recetas recetas__contenido" id="contenedor-recetas"></div>
-        <div class="botones-recetas">
-            <button class="btn" id="btnAnterior"> Anterior </button>
-            <button id="btnSiguiente"> Siguiente </button>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="contenedor-recetas"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
     </section>
+
 
     <section class="contacto">
         <h2 class="contacto__titulo">CONTÁCTANOS</h2>

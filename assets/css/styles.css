@@ -69,7 +69,7 @@ html {
         text-align: center;
         padding-top: 5rem;
         padding-bottom: 2.5rem;
-        background-color: #212529;
+        background-color: rgb(12, 14, 15);
         margin: 0;
     }
 
@@ -153,5 +153,46 @@ html {
     .diferencial__texto {
         font-size: 1.8rem;
         font-weight: 300;
+        color:#fdf0d5;
     }
 /* Termina SECTION: DIFERECIALES */
+
+/* SECTION: RECETAS */
+.recetas {
+    background-color: #212529;
+    min-height: fit-content;
+}
+.recetas__titulo {
+    color: #b99776;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    background-color: #212529;
+    margin: 0;
+}
+
+.carousel-inner{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 30%);
+}
+.carousel-item{
+    margin: 1rem;
+}
+.card-wrapper{
+    max-width: 100%;
+    height: 18rem;
+}
+.receta__img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Termina SECTION: RECETAS */
