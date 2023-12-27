@@ -4,7 +4,7 @@
 :root {
     /*Paleta*/
     --primary-solid: #ffffff;
-    --secondary-solid: #070707;
+    --secondary-solid: #0c0e0f;
     --accent-solid: #633f1e;
 
     --bg-light: #b99776;
@@ -103,12 +103,11 @@ ol {
         text-align: center;
         padding-top: 5rem;
         padding-bottom: 2.5rem;
-        background-color: rgb(12, 14, 15);
+        background-color: #0c0e0f;
         margin: 0;
     }
 
     .producto__img__contenedor {
-        /* min-width: 50%; */
         max-width: 50%;
     }
 
@@ -160,7 +159,7 @@ ol {
 
 /* SECTION: DIFERECIALES */
     .diferenciales {
-        background-color:#b99776;
+        background-color:#212529;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,6 +181,7 @@ ol {
     .diferencial__icono {
         font-size: 5rem;
         margin-bottom: 1rem;
+        color: #b99776
     }
 
     .diferencial__texto {
@@ -284,7 +284,7 @@ ol {
 /* SECTION: FOOTER */
 .footer {
     padding: 3rem;
-    background-color: black;
+    background-color: #212529;
 }
 .footer__contenido {
     display: flex;
