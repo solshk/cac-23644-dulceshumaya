@@ -58,6 +58,23 @@
         </div>
     </section>
 
+    <section class="diferenciales">
+        <div class="contenedor__diferencial">
+            <div class="diferencial">
+                <i class="diferencial__icono fa-solid fa-seedling"></i>
+                <p class="diferencial__texto">100% ORGÁNICO</p>
+            </div>
+            <div class="diferencial">
+                <i class="diferencial__icono fa-solid fa-wheat-awn-circle-exclamation"></i>
+                <p class="diferencial__texto">SIN TACC</p>
+            </div>
+            <div class="diferencial">
+                <i class="diferencial__icono fa-solid fa-ban"></i>
+                <p class="diferencial__texto">SIN CONSERVANTES</p>
+            </div>
+        </div>
+    </section>
+
     <section class="productos">
         <h2 class="productos__titulo">PRODUCTOS</h2>
         <div class="productos__contenido">
@@ -111,69 +128,23 @@
         </div>
     </section>
 
-    <section class="diferenciales">
-        <div class="contenedor__diferencial">
-            <div class="diferencial">
-                <i class="diferencial__icono fa-solid fa-seedling"></i>
-                <p class="diferencial__texto">100% ORGÁNICO</p>
-            </div>
-            <div class="diferencial">
-                <i class="diferencial__icono fa-solid fa-wheat-awn-circle-exclamation"></i>
-                <p class="diferencial__texto">SIN TACC</p>
-            </div>
-            <div class="diferencial">
-                <i class="diferencial__icono fa-solid fa-ban"></i>
-                <p class="diferencial__texto">SIN CONSERVANTES</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="recetas">
-        <h2 class="recetas__titulo">RECETAS</h2>
-        <div class="recetas__contenido">
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/conitos.jpg" alt="Conitos de Dulce de Leche">
-                </div>
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">CONITOS</h3>
-                    <p class="receta__texto">Una deliciosa opción para acompañar las meriendas, ese antojo de media noche o compartir con amigos.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/pepas.jpg" alt="Pepas de Dulce de Leche">
-                </div>                
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">PEPAS</h3>
-                    <p class="receta__texto">Las galletitas más tiernas y ricas, rellenas de dulce de leche, ideales para el mate y la hora del té.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-
-            <div class="receta">
-                <div class="receta__img__contenedor">
-                    <img class="receta__img" src="assets/img/torta.jpg" alt="Torta con dulcenutt">
-                </div>                
-                <div class="receta__contenido">
-                    <h3 class="receta__titulo">TORTA NUTT</h3>
-                    <p class="receta__texto">La torta de tres capas más sabrosa del mundo, combina una base de vainilla, dulce de leche y cubierta de choconutt.</p>
-                    <button class="receta__btn">PREPARACIÓN</button>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="recetas">
         <h2 class="recetas__titulo">RECETAS</h2>
-        <div class="contenedor-recetas recetas__contenido" id="contenedor-recetas"></div>
-        <div class="botones-recetas">
-            <button class="btn" id="btnAnterior"> Anterior </button>
-            <button id="btnSiguiente"> Siguiente </button>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="contenedor-recetas"></div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
     </section>
+
 
     <section class="contacto">
         <h2 class="contacto__titulo">CONTÁCTANOS</h2>
@@ -197,41 +168,41 @@
 
             <div class="index">
                 <p class="index__titulo">MENÚ</p>
-                <ul class="index__lista">
-                    <li class="index__item"><a href="">Home</a></li>
-                    <li class="index__item"><a href="">Productos</a></li>
-                    <li class="index__item"><a href="">Locales</a></li>
-                    <li class="index__item"><a href="">Contacto</a></li>
+                <ul class="index__lista" id="lista-footer">
+                    <li class="index__item"><a href="" id="lista-footer-item">Home</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Productos</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Locales</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Contacto</a></li>
                 </ul>
             </div>
 
             <div class="navegacion">
                 <p class="index__titulo">NAVEGACIÓN</p>
-                <ul class="index__lista">
-                    <li class="index__item"><a href="">Preguntas Frecuentes</a></li>
-                    <li class="index__item"><a href="">Distribuidores</a></li>
-                    <li class="index__item"><a href="">Prensa</a></li>
-                    <li class="index__item"><a href="">Recetas exclusivas</a></li>
+                <ul class="index__lista" id="lista-footer">
+                    <li class="index__item"><a href="" id="lista-footer-item">Preguntas Frecuentes</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Distribuidores</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Prensa</a></li>
+                    <li class="index__item"><a href="" id="lista-footer-item">Recetas exclusivas</a></li>
                 </ul>
             </div>
 
             <div class="redes">
                 <p class="index__titulo">REDES</p>
-                <div class="redes__lista">
-                    <a href=""><i class="fa-brands fa-instagram redes__item"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook redes__item"></i></a>
-                    <a href=""><i class="fa-brands fa-tiktok redes__item"></i></a>
+                <div class="redes__lista" id="lista-footer">
+                    <a href="" id="lista-footer-item"><i class="fa-brands fa-instagram redes__item"></i></a>
+                    <a href="" id="lista-footer-item"><i class="fa-brands fa-facebook redes__item"></i></a>
+                    <a href="" id="lista-footer-item"><i class="fa-brands fa-tiktok redes__item"></i></a>
                 </div>
             </div>
 
             <div class="ubicacion">
                 <p class="index__titulo">UBICACIÓN</p>
-                <p class="index__item">Monte de Oca 2356, CABA</p>
+                <p class="index__item"  id="lista-footer-item">Monte de Oca 2356, CABA</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12873.333153254875!2d-66.9505775476938!3d-36.23139694997973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d8c90f8d34de4d%3A0x1c42ce34de658154!2sSanta%20Isabel%2C%20La%20Pampa!5e0!3m2!1ses-419!2sar!4v1692658884638!5m2!1ses-419!2sar" width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
             </div>
         </div>
 
-        <p class="footer__creditos">Hecho con ❤ por <a href="https://github.com/solshk">solshk</a></p>
+        <p class="footer__creditos">Hecho con ❤ por <a id="lista-footer-item" href="https://github.com/solshk">solshk</a></p>
         
     </footer>
 

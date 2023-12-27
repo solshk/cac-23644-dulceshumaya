@@ -47,6 +47,14 @@
     }
 
     /* SECTION: RECETAS */
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3)
+    }
     /* .recetas__contenido{
         flex-direction: column;
         align-items: center;
@@ -57,15 +65,18 @@
     } */
      
     /* SECTION: CONTACTO */
-    /* .contacto{
+    .contacto{
         padding: 1.5rem;
     }
     .contacto__form {
         width: 100%;
-    } */
+    }
+    .form__btn {
+        width: 100%;
+    }
 
     /* FOOTER */
-    /* .footer {
+    .footer {
         padding: 1.5rem;
     }
     .footer__contenido {
@@ -80,5 +91,5 @@
     .redes__lista{
         flex-direction: row;
         gap: 2rem;
-    } */
+    }
 }
