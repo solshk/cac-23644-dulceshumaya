@@ -192,6 +192,10 @@ ol {
 /* Termina SECTION: DIFERECIALES */
 
 /* SECTION: RECETAS */
+.swiper {
+    width: 600px;
+    height: 300px;
+}
     .recetas {
         background-color: #212529;
         min-height: fit-content;
