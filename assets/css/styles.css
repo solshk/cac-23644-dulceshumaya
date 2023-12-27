@@ -1,7 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
+/*RESET*/
+:root {
+    /*Paleta*/
+    --primary-solid: #ffffff;
+    --secondary-solid: #070707;
+    --accent-solid: #633f1e;
+
+    --bg-light: #b99776;
+    --bg-dark: #2c2c2c;
+
+    --font-light: #fdf0d5;
+    --font-dark: #633f1e;
+    --font-accent: #b99776;
+
+    /*Fonts*/
+    --base-font: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--base-font);
+    /* font-size: 62.5%;  */
+    color: var(--font-light);
+    background-color: var(--bg-dark);
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 /* SECTION: BANNER */
@@ -158,41 +192,131 @@ html {
 /* Termina SECTION: DIFERECIALES */
 
 /* SECTION: RECETAS */
-.recetas {
-    background-color: #212529;
-    min-height: fit-content;
-}
-.recetas__titulo {
-    color: #b99776;
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 2.5rem;
-    background-color: #212529;
-    margin: 0;
-}
+    .recetas {
+        background-color: #212529;
+        min-height: fit-content;
+        padding-bottom: 5rem;
+    }
+    .recetas__titulo {
+        color: #b99776;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+        background-color: #212529;
+        margin: 0;
+    }
 
-.carousel-inner{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(4, 30%);
-}
-.carousel-item{
-    margin: 1rem;
-}
-.card-wrapper{
-    max-width: 100%;
-    height: 18rem;
-}
-.receta__img {
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
-    overflow: hidden;
-}
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .carousel-inner{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(4, 30%);
+    }
+    .carousel-item{
+        margin: 1rem;
+    }
+    .card-wrapper{
+        max-width: 100%;
+        height: 18rem;
+    }
+    .receta__img {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
 /* Termina SECTION: RECETAS */
+
+/* SECTION: CONTACTO */
+    .contacto {
+        background-color: #fdf0d5;
+        color: #633f1e;
+        padding: 6rem;
+    }
+    .contacto__titulo {
+        color: #633f1e;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .contacto__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__texto {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+    .form__label {
+        margin-top: 1.5rem;
+    }
+    input,
+    textarea {
+        padding: .5rem;
+        border: none;
+        background-color: #b99776;
+    }
+    .form__btn {
+        background-color: #fdf0d5;
+        color: #633f1e;
+        border: solid 2px #633f1e;
+        padding: 1rem 2rem;
+        font-weight: 700;
+        margin: 2.5rem auto;
+        width: 50%;
+    }
+    .form__btn:hover {
+        transform: scale(1.05);
+        transition-duration: 0.5s;
+    }
+/* Termina SECTION: CONTACTO */
+
+/* SECTION: FOOTER */
+.footer {
+    padding: 3rem;
+    background-color: black;
+}
+.footer__contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+#lista-footer{
+    padding: 0;
+}
+.index__titulo {
+    color: #b99776;
+    font-weight: 300;
+}
+#lista-footer-item {
+    font-family: inherit;
+    text-decoration: none;
+    color: var(--font-light);
+}
+.index__item {
+    margin-top: 1.2rem;
+}
+.redes__lista {
+    display: flex;
+    flex-direction: column;
+}
+.redes__item {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.footer__creditos {
+    text-align: center;
+    margin-top: 6rem;
+    color: var(--font-light);
+}
+/* Termina SECTION: FOOTER */

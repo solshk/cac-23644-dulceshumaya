@@ -65,15 +65,18 @@
     } */
      
     /* SECTION: CONTACTO */
-    /* .contacto{
+    .contacto{
         padding: 1.5rem;
     }
     .contacto__form {
         width: 100%;
-    } */
+    }
+    .form__btn {
+        width: 100%;
+    }
 
     /* FOOTER */
-    /* .footer {
+    .footer {
         padding: 1.5rem;
     }
     .footer__contenido {
@@ -88,5 +91,5 @@
     .redes__lista{
         flex-direction: row;
         gap: 2rem;
-    } */
+    }
 }
