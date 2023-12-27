@@ -1,4 +1,19 @@
-.banner__contenido{
+.banner {
+    background-image: url("../../img/banner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner__contenido {
     padding: 10rem;
     display: flex;
     flex-direction: column;
@@ -9,12 +24,12 @@
     z-index: 1;
 }
 
-.banner__titulo{
+.banner__titulo {
     font-size: 3.5rem;
-    font-weight:300;
+    font-weight: 300;
 }
 
-.banner__texto{
+.banner__texto {
     font-size: 2rem;
     font-weight: 300;
     text-align: end;
