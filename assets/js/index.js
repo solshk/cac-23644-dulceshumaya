@@ -13,8 +13,8 @@ const cargarRecetas = async () => {
 
           datos.data.forEach((receta) => {
             recetas += `
-            <div class="carousel-item active">
-              <div class="card h-100" style="width: 18rem;">
+            <div class="swiper-slide d-flex justify-content-center">
+              <div class="card h-100">
                 <div class="card-wrapper">
                   <img src="${receta.imagen}" class="card-img-top receta__img" alt="${receta.nombre}">
                 </div>
@@ -48,9 +48,11 @@ cargarRecetas();
 //SWIPER
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  slidesPerView: 3,
+  slidesPerView: 1,
+  spaceBetween: 10,
   direction: "horizontal",
   loop: true,
+  centeredSlides: true,
 
   // If we need pagination
   pagination: {
@@ -66,5 +68,28 @@ const swiper = new Swiper(".swiper", {
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+    2560: {
+      slidesPerView: 6,
+      spaceBetween: 30,
+    },
   },
 });

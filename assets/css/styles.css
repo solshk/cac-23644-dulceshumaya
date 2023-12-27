@@ -192,10 +192,10 @@ ol {
 /* Termina SECTION: DIFERECIALES */
 
 /* SECTION: RECETAS */
-.swiper {
-    width: 600px;
-    height: 300px;
-}
+    .swiper {
+        width: 90%;
+        height: 100%;
+    }
     .recetas {
         background-color: #212529;
         min-height: fit-content;
@@ -209,14 +209,8 @@ ol {
         background-color: #212529;
         margin: 0;
     }
-
-    .carousel-inner{
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: repeat(4, 30%);
-    }
-    .carousel-item{
-        margin: 1rem;
+    .card{
+        width: 18rem;
     }
     .card-wrapper{
         max-width: 100%;
