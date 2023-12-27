@@ -3,59 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/cabecera/cabecera.css">
-    <link rel="stylesheet" href="assets/css/banner/banner.css">
-    <link rel="stylesheet" href="assets/css/banner/banner-img.css">
-    <link rel="stylesheet" href="assets/css/banner/banner-contenido.css">
-    <link rel="stylesheet" href="assets/css/productos/productos.css">
-    <link rel="stylesheet" href="assets/css/productos/productos-titulo.css">
-    <link rel="stylesheet" href="assets/css/productos/productos-producto.css">
-    <link rel="stylesheet" href="assets/css/productos/productos-contenido.css">
-    <link rel="stylesheet" href="assets/css/diferenciales/diferenciales.css">
-    <link rel="stylesheet" href="assets/css/diferenciales/diferenciales-diferencial.css">
-    <link rel="stylesheet" href="assets/css/recetas/recetas-titulo.css">
-    <link rel="stylesheet" href="assets/css/recetas/recetas-contenido.css">
-    <link rel="stylesheet" href="assets/css/recetas/recetas-receta.css">
-    <link rel="stylesheet" href="assets/css/contacto/contacto.css">
-    <link rel="stylesheet" href="assets/css/contacto/contacto-titulo.css">
-    <link rel="stylesheet" href="assets/css/contacto/contacto-contenido.css">
-    <link rel="stylesheet" href="assets/css/contacto/contacto-form.css">
-    <link rel="stylesheet" href="assets/css/footer/footer.css">
-    <link rel="stylesheet" href="assets/css/footer/footer-contenido.css">
-    <link rel="stylesheet" href="assets/css/footer/footer-creditos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/media-query.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/606bc59f91.js" crossorigin="anonymous"></script>
 
     <title>Humaya</title>
 </head>
-<body>
-    <header class="cabecera">
-        <img class="cabecera__logo" src="assets/img/LogoHumaya100x100.png" alt="Dulces Humaya">
-        <nav class="cabecera__menu">
-            <ul class="menu__lista">
-                <li class="menu__item"><a class="menu__link" href="">Inicio</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Productos</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Locales</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Contacto</a></li>
-            </ul>
-            <div class="menu__hamburguesa">
-                <span><i class="fa-solid fa-bars"></i></span>
-            </div>
-            <div class="hamburguesa__cruz">
-                <span><i class="fa-solid fa-x "></i></span>
-            </div>
-            <div></div>
-        </nav>
-    </header>
 
-    <section class="banner">
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img id="cabecera__logo" src="assets/img/LogoHumaya100x100.png" alt="Dulces Humaya"></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Humaya</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner container-fluid">
         <div class="banner__contenido">
             <h2 class="banner__titulo">DULCES DEL ALMA</h2>
             <p class="banner__texto">Los productos HUMAYA son elaborados desde hace más de 50 años fiel a las tradiciones familiares
                 y sabores caseros, acompañándote en los momentos más importantes de la vida.</p>
-            <button class="banner__btn">CONOCENOS</button> 
+            <button class="btn" id="btn__marroncito">CONOCENOS</button> 
         </div>
     </section>
 
@@ -169,7 +168,7 @@
         <h2 class="recetas__titulo">RECETAS</h2>
         <div class="contenedor-recetas recetas__contenido" id="contenedor-recetas"></div>
         <div class="botones-recetas">
-            <button id="btnAnterior"> Anterior </button>
+            <button class="btn" id="btnAnterior"> Anterior </button>
             <button id="btnSiguiente"> Siguiente </button>
         </div>
     </section>
@@ -235,6 +234,7 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    
 </body>
 </html>

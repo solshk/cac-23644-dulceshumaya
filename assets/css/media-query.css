@@ -1,42 +1,8 @@
 @media screen and (max-width: 768px) {
-
-    /* HEADER */
-    .menu__hamburguesa{
-        display: block;
-        cursor: pointer;
-    }
-    .menu__hamburguesa.active{
-        display: none
-    }
-    .hamburguesa__cruz.active {
-        display: block;
-    }
-    .menu__lista{
-        flex-direction: column;
-        align-items: flex-end;
-        position: absolute;
-        background-color: #2c2c2c;
-        right: -100%;
-        top: 120px;
-        width: 100%;
-        transition: 0.3s;
-        display: none;
-    }
-    .menu__item{
-        margin-right: 2rem;
-    }
-    .menu__lista.active{
-        right: 0;
-        z-index: 99;
-        display: flex;
-    }
-
+   
     /* SECTION: BANNER */
-    .banner::before {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
     .banner__contenido{
-        padding: 3rem;
+        padding: 2rem;
         width: 100%;
         align-items: center;
     }
